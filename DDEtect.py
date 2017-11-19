@@ -17,7 +17,6 @@ try:
     d = xmltodict.parse(xmldata)
     #Looking up for the DDE object in this position
     DDE = nested_lookup('w:instrText', d)
-
     if DDE:
         print "Malicious DDE objects found: \n{0}".format(regex.findall(str(DDE)))
     else:
