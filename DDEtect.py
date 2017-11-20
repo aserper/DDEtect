@@ -33,10 +33,10 @@ else:
     #Parsing as an old DOC file
     with open(args.doc, 'rb') as doc:
         docstr = doc.read()
-    pos = docstr.find('DDE') #We're looking for the string 'DDE', this will return its position.
+    pos = docstr.find('DDE') # We're looking for the string 'DDE', this will return its position.
     pos = pos-1 # Deducting 1 so we're now 1 char before the string starts
-    doc_regex = re.compile("^[^`]+") # Regex is looking for the final char to be '`' since that's our delimiter.
-    res = doc_regex.findall(docstr[pos:]) # Matching from regex to '`'
+    doc_regex = re.compile('^[^"]+') # Regex is looking for the final char to be '"' since that's our delimiter.
+    res = doc_regex.findall(docstr[pos:]) # Matching from regex to '"'
     if "DDE" in str(res):
         print "Malicious DDE objects found:\n{0}".format(res)
     else:
