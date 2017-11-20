@@ -1,4 +1,4 @@
-# DDEtector
+# DDEtect
 Written by Amit Serper, [@0xAmit](http://twitter.com/0xAmit)
 DDEtector is a simple DDE object detector written in python
 
