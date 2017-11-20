@@ -6,6 +6,10 @@ DDEtector is a simple DDE object detector written in python
   - Prints the contents of the DDE payloads (Note: In some cases DDEtect won't print the entire DDE payload. I'm working on writing a better matching algorithm)
   - More features coming soon...
 
+### Notes
+This was done quick-n-dirty. I'm sure that there is a better and more elegant way of doing everything in here but I wasn't giving it a lot of thought.
+Constructive feedback is always welcome, twitter is the best way of contacting me. This is a work in progress...
+
 ### Running DDEtector
 
 Execute the python file and supply a path to a docx file as an argument. Use the -d argument for a regular doc file or -x for a docx file:
