@@ -1,5 +1,4 @@
 import zipfile
-from sys import argv
 import xmltodict
 from nested_lookup import nested_lookup
 import re
